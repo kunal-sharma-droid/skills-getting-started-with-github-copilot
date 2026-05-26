@@ -21,7 +21,7 @@ jobs:
     uses: skills/exercise-toolkit/.github/workflows/start-exercise.yml@v0.8.1
     with:
       exercise-title: "Getting Started with GitHub Copilot"
-      intro-message: "Welcome to the exciting world of GitHub Copilot! 🚀 In this exercise, you'll unlock the potential of this AI-powered coding assistant to accelerate your development process. Let's dive in and have some fun exploring the future of coding together! 💻✨"
+      intro-message: "Welcome to the exciting world of GitHub Copilot! 🚀 In this exercise, you'll unlock the potential of this AI-powered coding assistant to accelerate your development process."
 
   post_next_step_content:
     name: Post next step content
@@ -33,12 +33,12 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
         with:
           ref: main
 
       - name: Get response templates
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
         with:
           repository: skills/exercise-toolkit
           path: exercise-toolkit
